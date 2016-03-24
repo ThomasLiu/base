@@ -1,0 +1,31 @@
+include include/main
+
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible',content='IE=edge')
+    meta(name='description',content=config.description)
+    meta(name='viewport',content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+
+    meta(name='apple-mobile-web-app-capable',content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style',content='black')
+    meta(name='csrf-param',content='_csrf')
+    meta(name='csrf-token',content='#{csrf || ""}')
+
+    link(rel='stylesheet', href='http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css')
+
+    link(rel='stylesheet', href='/css/style.css')
+
+    block cssBlock
+
+    //!= newrelic.getBrowserTimingHeader()
+  body
+    block content
+
+    //script(scr='http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js')
+
+    // http://v3.bootcss.com/getting-started/
+    //script(scr='http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js')
+    block jsBlock
