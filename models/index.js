@@ -2,7 +2,7 @@
  * Created by user on 15/6/15.
  */
 var mongoose = require('mongoose');
-var config = require('../config');
+var config = require('../web_config');
 
 mongoose.connect(config.db, function (err) {
    if (err) {

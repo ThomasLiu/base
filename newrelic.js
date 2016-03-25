@@ -1,4 +1,4 @@
-var config = require('./config');
+var config = require('./web_config');
 /**
  * New Relic agent configuration.
  *

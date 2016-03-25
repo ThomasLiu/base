@@ -10,7 +10,7 @@ var site             = require('./controllers/site');
 var sign             = require('./controllers/sign');
 var manage             = require('./controllers/manage');
 var passport         = require('passport');
-var config           = require('./config');
+var config           = require('./web_config');
 
 var auth = require('./middlewares/auth');
 

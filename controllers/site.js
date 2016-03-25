@@ -5,7 +5,7 @@
 var xmlbuilder   = require('xmlbuilder');
 var eventproxy   = require('eventproxy');
 var cache        = require('../common/cache');
-var config       = require('../config');
+var config       = require('../web_config');
 var _            = require('lodash');
 
 exports.index = function (req, res, next) {

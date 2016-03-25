@@ -7,7 +7,7 @@ var tools = require('../common/tools');
 var User = require('../proxy').User;
 var utility        = require('utility');
 var mail           = require('../common/mail');
-var config         = require('../config');
+var config         = require('../web_config');
 var authMiddleWare = require('../middlewares/auth');
 var uuid    = require('node-uuid');
 
