@@ -92,10 +92,11 @@ var config = {
 
     // 7牛的access信息，用于文件上传
     qn_access: {
-        accessKey: 'your access key',
-        secretKey: 'your secret key',
-        bucket: 'your bucket name',
-        domain: 'http://{bucket}.qiniudn.com'
+        accessKey: 'd0esGbB4eDjCACktGss5KnnnivQYaL-OAy_OV_Nx',
+        secretKey: 'BvpQkrbZBeMh1y12DU3SYHgrM7ukj0UiH1VV_Gdw',
+        bucket: 'linkee-web',
+        uploadURL: 'http://up.qiniu.com/',
+        origin: 'http://7xsaw5.com1.z0.glb.clouddn.com'
     },
 
     // 文件上传配置

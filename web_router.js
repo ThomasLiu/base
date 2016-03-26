@@ -9,6 +9,7 @@ var express          = require('express');
 var site             = require('./controllers/site');
 var sign             = require('./controllers/sign');
 var manage             = require('./controllers/manage');
+var upload = require('./controllers/upload');
 var passport         = require('passport');
 var config           = require('./web_config');
 
@@ -45,6 +46,15 @@ router.post('/reset_pass', sign.updatePass);  // 更新密码
 
 // ------------------------------------------------------------------
 
+
+/**
+ * ------------------------------------------------------------------
+ * 上传文件
+ * ------------------------------------------------------------------
+ */
+router.post('/upload', auth.userRequired, upload.upload); //上传图片
+router.post('/ueditorUpload', auth.userRequired, upload.ueditorUpload); //上传图片
+// ------------------------------------------------------------------
 
 router.get('/manage', auth.userRequired, manage.index);  // 进入重置密码页面
 
