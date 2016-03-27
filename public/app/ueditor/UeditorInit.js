@@ -4,7 +4,7 @@
 import $ from 'jquery';
 
 import './src/umeditor.config.js';
-import './src/umeditor.js';
+import './src/umeditor.min.js';
 import './src/lang/zh-cn/zh-cn';
 import './src/themes/default/css/umeditor.min.css!'
 
